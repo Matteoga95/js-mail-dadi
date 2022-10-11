@@ -37,6 +37,24 @@ if (trovato === false) {
     console.log("Mail corretta, che il gioco dei dadi abbia inizio!!");
     //vado avanti con il gioco dei dadi
 
+    //Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
+    const playerNum = Math.floor(Math.random() * 6);
+
+    const computerNum = Math.floor(Math.random() * 6);
+
+    console.log("Il tuo numero è " + playerNum);
+
+    console.log("Mentre il mio è " + computerNum);
+
+    if (playerNum > computerNum) {
+        console.log("Wow che fortuna hai vinto, la prossima volta vincerò io...");
+    } else if (playerNum < computerNum) {
+        console.log("Ho vinto io mi dispiace, la prossima volta forse sarai più fortunato...");
+    } else {
+        console.log("Sembra che qui abbiamo un pareggio, facciamo che in questi casi vinco io?...");
+    }
+
+    console.log("Ricarica la pagina per iniziare da capo.");
 
 }
