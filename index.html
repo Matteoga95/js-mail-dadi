@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,42 @@
     <title>js-mail-dadi</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+
+
+    <section id="blocco-info">
+        <h1>My Dice Game</h1>
+
+        <h2>Benvenuto giocatore, ora testeremo la tua Buona sorte</h3>
+
+            <p>Clicca su inizia</p>
+
+            <div class="d-flex">
+                <button>Inizia</button>
+            </div>
+
+    </section>
+
+    <section id="blocco-game">
+
+        <div>
+            <h2>Il tuo numero estratto è </h2>
+            <p class="num-extract" id="player-number"></p>
+        </div>
+
+        <div>
+            <h2>Il mio numero estratto è </h2>
+            <p class="num-extract" id="computer-number"></p>
+        </div>
+
+        <h2 id="result-String"></h2>
+
+    </section>
+
+    <p id="ricarica"></p>
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
